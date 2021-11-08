@@ -1,0 +1,389 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(7, 7, 7); /* For browsers that do not support gradients */
+    background-image: linear-gradient(180deg,#D5EDEB,white);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+.element{
+position: relative;
+top: -160px;
+}
+.background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    clip-path: circle(44.2% at 79% 14%);
+    z-index: -1;
+     
+    background-image: linear-gradient(0deg,#65BFB6,#CFEDEA);
+      
+}
+
+.nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-family: Roboto;
+    font-size: 30px;
+    margin-top: 20PX;
+    margin-left: 1000px;
+}
+nav a{
+    text-decoration: none;
+    color: #00807D;
+}
+#img{
+width: 198px;
+height: 199px;
+left: -20px;
+top: -25px;
+}
+header{
+  
+    z-index: 2;
+    height: 87px;
+}
+.oner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section1{
+    font-size: 20px;
+    flex: 50%;
+    margin-top: 132px;  
+}
+.section2{
+    justify-content: end;
+    flex: 50%;
+    margin-top: -150px;
+    flex-wrap: wrap;
+    margin-right: -100px;
+}
+.butt1{
+    position: absolute;
+    width: 267px;
+    height: 63px;
+    left: 47px;
+    top: 575px;
+    
+    background: #F4C32F;
+    border-radius: 25px;
+border: none;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 33px;
+line-height: 40px;
+
+color: #FFFFFF;
+}
+.butt2{
+    position: absolute;
+    width: 267px;
+    height: 63px;
+    left: 337px;
+    top: 575px;
+    
+    background: #F4C32F;
+    border-radius: 25px;
+    border: none;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 33px;
+line-height: 40px;
+
+color: #FFFFFF;
+}
+.barre{
+    position: absolute;
+    height: 36px;
+    left: 45px;
+    top: 504px; 
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #65BFB6;
+}
+.TITLE{
+    position: absolute;
+    height: 89px;
+    left: 47px;
+    top: 277px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 73px;
+    line-height: 89px;
+    color: #00807D;
+
+}
+
+.key{
+    position: absolute;
+    /* width: 568px; */
+    height: 107px;
+    left: 47px;
+    top: 386px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    
+    color: #6B6161;
+}
+.coprt{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #F4C32F;
+margin-bottom: 10px;
+}
+footer{
+    display: flex;
+    margin: 20px;
+    font-size: 20px;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+i{
+ 
+    color: #00807D;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 376px) {
+/* humburgur */
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #00807D;
+    width: 0%;
+    box-sizing: border-box;
+    position: absolute;
+width: 375px;
+height: 812px;
+left: 0px;
+top: 0px;
+box-sizing: border-box;
+
+}
+/* .section2{
+    margin-right: -100px;
+} */
+.element{
+    position: relative;
+    top: 0px;
+    }
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+    position: relative;
+    left: 159px;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: #ffffff;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+    list-style: none;
+    padding: 7px 0;
+}
+
+.nav{
+	padding: 0;
+	margin: 0;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 0;
+	background: radial-gradient(#A1E9E2,#65BFB6);
+	transition: 0.3s ease;
+}
+    
+/* #menu-bar{
+    z-index: 2;
+    position: relative;
+    left: 160vw;
+    top: -140px;
+} */
+.change-bg{
+    width: 51vw;
+    height: 540px;
+    transform: translate(85%,-30%);
+    z-index: -1;
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+
+
+.background{
+  clip-path: ellipse(79% 48% at 79% 52%) ;
+  position: absolute;
+width: 169px;
+height: 675px;
+left: 206px;
+top: -98px;
+}
+.section2{
+        position: absolute;
+        top: 438px;
+}
+.TITLE{
+    position: absolute;
+    width: 293px;
+    height: 40px;
+    left: 19px;
+    top: 139px;
+    font-size: 25px;
+    line-height: 30px;
+    }
+.key{
+    position: absolute;
+    width: 198px;
+    height: 36px;
+    left: 19px;
+    top: 187px;
+    font-size: 12px;
+    line-height: 15px;
+    
+}
+.barre{
+    
+    position: absolute;
+    width: 174px;
+    height: 18px;
+    left: 19px;
+    top: 234px;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}    
+.butt1{
+    position: absolute;
+    width: 121px;
+    height: 26px;
+    left: 19px;
+    top: 270px;
+    font-size: 13px;
+line-height: 16px;
+}
+.butt2{
+    position: absolute;
+    width: 121px;
+    height: 26px;
+    left: 19px;
+    top: 309px;
+    font-size: 13px;
+line-height: 16px;
+}
+#img2{
+    position: absolute;
+    width: 328px;
+    height: 341px;
+    left: 24px;
+}
+.coprt{
+    position: absolute;
+ 
+    left: 81px;
+    top: 769px;
+    font-size: 11px;
+    line-height: 8px;
+}
+footer{
+    position: absolute;
+    width: 91px;
+    height: 25px;
+    left: 126px;
+    top: 671px;
+}
+ i{
+     font-size: 30px;
+     margin: 5px;
+ }
+
+span{
+    display: none;
+}
+
+#menu-bar{
+    position: absolute;
+height: 18px;
+left: 129px;
+top: 17px;
+}
+#img{
+    position: absolute;
+width: 79.42px;
+height: 76px;
+left: -3px;
+top: -5px;
+}
+nav a{
+   margin-left: 80px;
+}
+}
